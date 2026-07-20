@@ -392,10 +392,22 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3d140df08c223164aa4de5ab406660a0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::GameEventListener
-  gameEvent: {fileID: 0}
+  gameEvent: {fileID: 11400000, guid: a3a707e6879b3d94a9c7da62f0253605, type: 2}
   response:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1249559116}
+        m_TargetAssemblyTypeName: HUDController, Assembly-CSharp
+        m_MethodName: ShowYouWinPanel
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1249559116
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -780,7 +792,7 @@ SpriteRenderer:
   m_SortingOrder: 0
   m_MaskInteraction: 0
   m_Sprite: {fileID: 7482667652216324306, guid: 311925a002f4447b3a28927169b83ea6, type: 3}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_Color: {r: 0.61006284, g: 0.5415652, b: 0.37793198, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
