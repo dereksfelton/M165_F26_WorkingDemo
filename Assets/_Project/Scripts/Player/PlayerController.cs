@@ -14,6 +14,7 @@ public class PlayerController : MonoBehaviour
     [SerializeField] private float gravityStrength = 20f;
     [SerializeField] private float groundCheckThickness = 0.08f; // height of the overlap-check box — see Rationale below
     [SerializeField] private LayerMask groundLayer;
+    [SerializeField] private float jumpSpeed = 8f; // Upward velocity applied on jump press    
 
     private Rigidbody2D rb;
     private CapsuleCollider2D col;
@@ -103,5 +104,16 @@ public class PlayerController : MonoBehaviour
     public void HandleMoveInput(InputAction.CallbackContext context)
     {
         moveInput = context.ReadValue<Vector2>();
+    }
+
+    // Wired to the Jump action's Invoke Unity Events slot in the Inspector — same
+    // pattern as HandleMoveInput. Jump is a Button action, so context.performed
+    // fires once on press, not continuously while held.
+    public void HandleJumpInput(InputAction.CallbackContext context)
+    {
+        if (context.performed && isGrounded)
+        {
+            verticalVelocity = jumpSpeed;
+        }
     }
 }
