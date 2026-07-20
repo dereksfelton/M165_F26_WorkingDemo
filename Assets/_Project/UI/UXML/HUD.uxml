@@ -1,0 +1,8 @@
+<ui:UXML xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements" editor-extension-mode="False">
+    <Style src="project://database/Assets/_Project/UI/USS/SharedStyles.uss?fileID=7433441132597879392&amp;guid=d3b33bb0ca266b64aa66a47e473debb1&amp;type=3#SharedStyles"/>
+    <ui:VisualElement name="Root" style="flex-grow: 1;">
+        <ui:VisualElement name="YouWinPanel" class="win-panel">
+            <ui:Label text="You Win!" name="YouWinLabel" class="win-label"/>
+        </ui:VisualElement>
+    </ui:VisualElement>
+</ui:UXML>

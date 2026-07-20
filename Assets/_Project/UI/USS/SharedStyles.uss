@@ -1,0 +1,21 @@
+.win-panel {
+    position: absolute;
+    top: 35%;
+    left: 30%;
+    width: 40%;
+    height: 20%;
+    min-width: 280px;
+    min-height: 100px;
+    background-color: rgba(20, 20, 20, 0.85);
+    border-radius: 12px;
+    justify-content: center;
+    align-items: center;
+    padding: 12px;
+}
+
+.win-label {
+    color: rgb(255, 255, 255);
+    font-size: 36px;
+    -unity-font-style: bold;
+    white-space: nowrap;
+}
