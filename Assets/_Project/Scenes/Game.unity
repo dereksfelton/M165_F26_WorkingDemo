@@ -483,7 +483,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9f3a00756fc01fb4092ba7238852c149, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::GoalZone
-  onPlayerReachedGoal: {fileID: 0}
+  onPlayerReachedGoal: {fileID: 11400000, guid: a3a707e6879b3d94a9c7da62f0253605, type: 2}
 --- !u!61 &1443021753
 BoxCollider2D:
   m_ObjectHideFlags: 0
